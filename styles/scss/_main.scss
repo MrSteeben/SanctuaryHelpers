@@ -1,0 +1,315 @@
+/******************************
+* Main Page Header Styles     *
+/*****************************/
+
+/* Discovering New Materials Section */
+
+.newMaterials {
+    background: $contentBoxColor;
+    .discoverMaterials {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+        padding-top: 150px;
+        p {
+            padding-bottom: 20px;
+        }
+        div.discoverContent {
+            flex: 1 0 300px;
+            padding: 20px;
+        }
+        div.discoverImage {
+            flex: 0 0 300px;
+            img {
+                box-shadow: -20px 20px $boxShadowColor;
+            }
+        }
+    }
+}
+
+/* Three Gallery Images Section */
+
+section.mainGalleryImages {
+    background: $mainBodyColor;
+    .galleryImagesFlex {
+        @include centerFlex();
+        flex-wrap: wrap;
+        li {
+            flex: 1 0 400px;
+            padding: 40px 0;
+            img {
+                width: calc(100% - 60px);
+            }
+        }
+    }
+}
+
+/* Company Media Links Section */
+
+section.companyMedia {
+    background: $contentBoxColor;
+    .companyMediaFlex {
+        @include centerFlex();
+        flex-wrap: wrap;
+        .card {
+            display: flex;
+            flex: 1 0 500px;
+            padding: 40px 20px;
+            i {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+/* Group Programs and New Locations Section */
+
+/* Programs box */
+
+section.groupPrograms {
+    background: $mainBodyColor;
+    padding-bottom: 100px;
+    position: relative;
+    .programs {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        .programsTextContent {
+            align-self: flex-end;
+            flex: 1 0 300px;
+            width: 38%;
+            img {
+                position: absolute;
+                left: 0;
+                top: -40px;
+                box-shadow: 20px 20px $boxShadowColor;
+            }
+        } 
+        div {
+            width: 300px;
+            flex: 1 0 50%;
+            padding-top: 100px;
+            h2 {
+                padding-bottom: 20px;
+            }
+            p {
+                padding-bottom: 50px;
+            }
+        }
+    }
+
+    /* Locations Box */
+
+    .locations {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        .locationsTextContent {
+            margin-top: 50px;
+            flex: 1 0 300px;
+            align-self: flex-start;
+            width: 38%;
+            text-align: right;
+            img {
+                position: absolute;
+                right: 0;
+                bottom: -40px;
+                box-shadow: 20px 20px $boxShadowColor;
+            }
+        }
+
+        div {
+            width: 300px;
+            flex: 1 0 50%;
+            padding-top: 100px;
+            h2 {
+                padding-bottom: 20px;
+            }
+            p {
+                padding-bottom: 50px;
+            }
+        }
+    } 
+}
+
+/* Search by Style Section */
+
+section.styleSearch {
+    background: $contentBoxColor;
+    img {
+        width: 100%;
+    }
+    .styleTextContent {
+        text-align: center;
+        padding: 50px 0;
+        h2 {
+            padding-bottom: 10px;
+        }
+        p {
+            padding-bottom: 20px;
+            text-align: left;
+        }
+    }
+}
+
+/******************************
+* Blog Page Main Styles       *
+/*****************************/
+
+.blogMain {
+    background: $mainBodyColor;
+    .blogMainPost {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        .blogContent {
+            background: $contentBoxColor;
+            padding: 10px;
+            border-right: 10px solid $boxShadowColor;
+            border-bottom: 10px solid $boxShadowColor;
+            h2 {
+                margin-top: 50px;
+                margin-bottom: 20px;
+            }
+            p {
+                margin: 20px 0;
+            }
+        }
+
+        .commentHeader {
+            margin: 100px 0; 
+        }
+
+        aside {
+            position: absolute;
+            right: 0;
+            max-width: 25%;
+            background: $boxShadowColor;
+            border-left: 20px solid $boxShadowColor;
+            img {
+                box-shadow: -20px 20px $boxShadowColor;
+            }
+            ul {
+                list-style: disc; 
+                padding-left: 15px;
+            }
+        }
+
+        .mainBlogImage {
+            box-shadow: 20px 20px $boxShadowColor;  
+        }
+
+        .commentBox {
+            display: flex;
+            .commentUserImage {
+                width: 20%;
+                padding: 30px 20px 0 0;
+            }
+            .commentContentBox {
+                width: 80%;
+                .commentUserName {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+                p {
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        /* Blog Page Form Section */
+
+        form {
+            margin-top: 40px;
+            min-width: 350px;
+            input {
+                background: $mainBodyColor;
+                width: 46%;
+                display: inline;
+                margin: 0 27px 50px 0;
+                outline: none;
+                border: 0;
+                border-bottom: 1px solid $buttonColor;
+            }
+            textarea {
+                background: $mainBodyColor;
+                width: 100%;
+                resize: none;
+                border: 1px solid $buttonColor;
+                height: 200px;
+            }
+            button {
+                width: 100%;
+                border: 0;
+                padding: 15px 0;
+                margin: 40px 0;
+            }
+        }
+    }
+}
+
+/******************************
+* Contact Page Main Styles    *
+/*****************************/
+
+.contactPage {
+    background: $mainBodyColor;
+}
+
+.contactSection {
+    display: flex;
+    width: 100%;
+    margin-bottom: 100px;
+    .contactPageForm {
+        margin-top: 40px;
+        padding: 75px 10px 10px 10px;
+        background: $contentBoxColor;
+        width: 65%;
+        margin: 0;
+        box-shadow: 20px 20px $boxShadowColor;
+        input {
+            background: $contentBoxColor;
+            /* Why will this not do a width of 50%? Is this a calc() case? */
+            width: 45%; 
+            display: inline;
+            margin: 0 27px 50px 0;
+            outline: none;
+            border: 0;
+            border-bottom: 1px solid $buttonColor;
+        }
+        textarea {
+            background: $contentBoxColor;
+            width: 100%;
+            resize: none;
+            border: 1px solid $buttonColor;
+            height: 200px;
+        }
+        button {
+            width: 100%;
+            border: 0;
+            padding: 15px 0;
+            margin: 40px 0;
+        }
+    }
+    .socialMediaLinks {
+        margin-left: 100px;
+        margin-top: 100px;
+        ul {
+            margin-bottom: 20px;
+            li {
+            display: inline-block;
+            margin-right: 15px;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $fontColor;
+        } 
+        p {
+            margin-bottom: 20px;
+        }
+        address {
+            font-style: normal;
+        }
+    }
+}

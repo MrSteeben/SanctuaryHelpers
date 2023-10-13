@@ -1,0 +1,39 @@
+/******************************
+* Main Page Header Styles     *
+/*****************************/
+
+.mainPage header {
+    background: url(../assets/header-home.jpg);
+    background-size: cover;
+    height: 100vh;
+    img {
+        position: absolute;
+        bottom: -120px;
+        left: 0;
+    }
+    h1 {
+        width: 100px;
+        padding-top: 30px;
+    }
+}
+
+/******************************
+* Blog Page Header Styles     *
+/*****************************/
+
+.blogPage header {
+    background: url(../assets/blog-image.jpg);
+    height: 75vh;
+    background-size: cover;
+}
+
+/******************************
+* Contact Page Header Styles  *
+/*****************************/
+
+.contactPage header {
+    background: url(../assets/contact-image.jpg);
+    height: 50vh;
+    background-size: cover;
+
+}
